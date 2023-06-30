@@ -1,11 +1,11 @@
 from tabulate import tabulate,SEPARATING_LINE
 print('Current 1RMs:')
-
+#inputs for initial weights
 sq=input('Squat:')
 be=input('Bench:')
 dl=input('Deadlift:')
 ohp=input('OHP:')
-
+#lists of training weights
 SQw1=[float(sq)*.65,float(sq)*.75,float(sq)*.85]
 SQw2=[float(sq)*.7,float(sq)*.8,float(sq)*.9]
 SQw3=[float(sq)*.75,float(sq)*.85,float(sq)*.95]
@@ -21,7 +21,7 @@ BEw3=[float(be)*.75,float(be)*.85,float(be)*.95]
 OHw1=[float(ohp)*.65,float(ohp)*.75,float(ohp)*.85]
 OHw2=[float(ohp)*.7,float(ohp)*.8,float(ohp)*.9]
 OHw3=[float(ohp)*.75,float(ohp)*.85,float(ohp)*.95]
-
+#table output of training
 train=[[' ','Tuesday','Friday'],
        ['Week 1','OHP:'+str(OHw1),'Bench:'+str(BEw1)],
        ['3x5+','Squat:'+str(SQw1),'Deadlift:'+str(DLw1)],
